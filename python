@@ -1,0 +1,2 @@
+netstat -an|awk '/^tcp/ {++S[$NF]} END {for (s in S) print s, S[s]}' 
+查连接数
